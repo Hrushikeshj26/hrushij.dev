@@ -45,7 +45,7 @@ function Hero() {
           <img
             src="/images/cat-pic.jpg" // Ensure this path is correct relative to your public folder
             alt="profile-pic"
-            className='w-64 h-64 sm:w-80 sm:h-80 md:w-lg md:h-auto md:h-96 object-cover rounded-full border-4 border-[#D3E97A] shadow-2xl'
+            className='w-64 h-64 sm:w-80 sm:h-80 md:w-lg md:h-auto object-cover rounded-full border-4 border-[#D3E97A] shadow-2xl'
           />
         </div>
       </div>
