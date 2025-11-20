@@ -57,20 +57,6 @@ function Footer() {
                     className='bg-gray-800 py-3 px-3 rounded-full text-blue-300 hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-gray-700 hover:scale-105 transition-all duration-300 shadow-lg'>
                         <FaGithub />
                 </a>
-                <a
-                href="https://www.linkedin.com/in/hrushikeshj26/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className='bg-gray-800 py-3 px-3 rounded-full text-blue-300 hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-gray-700 hover:scale-105 transition-all duration-300 shadow-lg'>
-                    <FaLinkedinIn />
-                </a>
-                <a
-                    href="https://github.com/Hrushikeshj26" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className='bg-gray-800 py-3 px-3 rounded-full text-blue-300 hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-gray-700 hover:scale-105 transition-all duration-300 shadow-lg'>
-                        <FaGithub />
-                </a>
             </div>
         </div>
         
