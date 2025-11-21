@@ -6,7 +6,7 @@ function About() {
   const skillCategories = [
     {
       title: "Languages",
-      skills: ["HTML5", "CSS3", "JavaScript (ES6+)", "Java", "C", "SQL"]
+      skills: ["HTML5", "CSS3", "JavaScript (ES6+)"]
     },
     {
       title: "Frameworks & Libraries",
@@ -14,7 +14,7 @@ function About() {
     },
     {
       title: "Tools & Platforms",
-      skills: ["Git", "GitHub", "Figma", "Chrome DevTools", "Vercel", "Netlify", "Postman"]
+      skills: ["Git", "GitHub", "Figma", "Chrome DevTools", "Vercel", "Netlify"]
     },
     {
       title: "Soft Skills",
@@ -44,15 +44,10 @@ function About() {
         {/* Text Content */}
         <div className='flex flex-col w-full md:w-1/2 text-center md:text-left'>
           <p className='text-2xl md:text-4xl pb-5 font-medium leading-tight'>
-            I am a front-end developer based in Sydney. <br className="hidden md:block" /> 
-            Has Mechanical Engineering background.
+            I am a front-end developer based in India.
           </p>
           <p className='text-base md:text-lg text-gray-300 leading-relaxed'>
-            I am a front-end developer based in Sydney looking for exciting opportunities. 
-            Has Mechanical Engineering background. Likes to focus on accessibility when developing. 
-            Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow 
-            and a bit of Designing. While I am not programming, I enjoy playing football, photography 
-            and playing Valorant. Learning more to improve skill.
+            I am a Frontend Developer looking for exciting opportunities. I have a background in Computer Applications (BCA). I like to focus on accessibility and performance when developing. Passionate and curious about solving problems. Currently, I’m exploring the React.js ecosystem, Webflow, and UI Designing. While I am not programming, I enjoy gaming. Always learning to improve my skills.
           </p>
 
           {/* Buttons */}
@@ -82,7 +77,7 @@ function About() {
         </div>
       </div>
 
-      <hr className='mt-16 md:mt-30' />
+      <hr className='mt-16 md:mt-35' />
 
       {/* Skills Section */}
       <div className='flex w-full gap-8 justify-between items-center flex-col'>
