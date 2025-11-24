@@ -25,7 +25,7 @@ function About() {
   return (
     <div className='text-white max-w-7xl mx-auto h-auto py-10 md:py-20 px-6 md:px-12'>
       
-      <h1 className='uppercase font-semibold text-3xl hidden md:text-4xl pb-10 md:pb-16 mt-10 md:mt-20 text-center'>
+      <h1 className='uppercase font-semibold text-3xl hidden md:flex md:text-4xl pb-10 md:pb-16 mt-10 md:mt-20 justify-center'>
         about me
       </h1>
 
