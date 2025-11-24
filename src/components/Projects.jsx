@@ -6,12 +6,12 @@ function Projects({props}) {
         <div className='bg-gray-700 rounded-xl w-2/2 md:w-2/3 flex items-center flex-col'>
             <img src={props.imageUrl}
             alt="project-demo" 
-            className='object-cover rounded-xl'
+            className='object-cover rounded-xl w-full h-75'
             />
         </div>
         <div className='w-full flex gap-4 flex-col'>
             <h2 className='md:text-3xl text-2xl font-semibold'>{props.name}</h2>
-            <p className='w-full text-gray-300'>{props.info}</p>
+            <p className='w-full text-gray-300 text-lg'>{props.info}</p>
 
             <div>
           <h3 className='text-xl'>Tech Stack</h3>
@@ -22,7 +22,7 @@ function Projects({props}) {
             {props.techStack.map((tech) => (
               <span 
                 key={tech}
-                className="bg-blue-800 text-white text-[1rem] font-medium px-3 py-1 rounded-full"
+                className="bg-(--skills-color) text-white text-[1rem] font-medium px-3 py-1 mt-2 rounded-full"
               >
                 {tech}
               </span>
@@ -30,7 +30,7 @@ function Projects({props}) {
           </div>
         </div>
         
-        <div className='flex gap-8 text-blue-300 font-semibold mt-4'>
+        <div className='flex gap-8 text-(--primary-foreground-1) font-semibold mt-4'>
           <a 
             href={props.liveDemo} // <-- Use your project data
             target="_blank" 
