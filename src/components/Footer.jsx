@@ -47,14 +47,14 @@ function Footer() {
                 href="https://www.linkedin.com/in/hrushikeshj26/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className='bg-gray-800 py-3 px-3 rounded-full text-blue-300 hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-gray-700 hover:scale-105 transition-all duration-300 shadow-lg'>
+                className='bg-(--primary-foreground-1) py-3 px-3 rounded-full text-black hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--primary-foreground-2) hover:scale-105 transition-all duration-300 shadow-lg'>
                     <FaLinkedinIn />
                 </a>
                 <a
                     href="https://github.com/Hrushikeshj26" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className='bg-gray-800 py-3 px-3 rounded-full text-blue-300 hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-gray-700 hover:scale-105 transition-all duration-300 shadow-lg'>
+                    className='bg-(--primary-foreground-1) py-3 px-3 rounded-full text-black hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--primary-foreground-2) hover:scale-105 transition-all duration-300 shadow-lg'>
                         <FaGithub />
                 </a>
             </div>
@@ -105,8 +105,7 @@ function Footer() {
             
             <button
                 type="submit"
-                className='bg-blue-700 py-3 px-6 rounded-full text-white font-medium flex items-center gap-10
-                            hover:bg-blue-800 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg w-35 justify-center'
+                className='bg-(--primary) hover:bg-(--primary-foreground) py-3 px-6 rounded-full text-white hover:text-black font-medium flex items-center gap-10 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg w-35 justify-center'
             >Submit</button>
         </form>
     </div>
