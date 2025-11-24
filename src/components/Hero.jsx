@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className='h-screen pt-15 flex justify-center items-center text-white overflow-hidden'>
       {/* Hero Content */}
-      <div className='w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-20'>
+      <div className='w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between md:gap-10 lg:gap-20'>
         <div className='flex-1 text-center md:text-left'>
           <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6'>
             HI, I AM <br /> HRUSHIKESH JADHAV.
