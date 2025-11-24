@@ -7,12 +7,13 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 
 
+
 function App() {
 
   const location = useLocation();
 
   return (
-    <div className="bg-black font-share">
+    <div className="bg-(--background) font-share">
       <Navbar/>
         <Routes>
           <Route path="/" element={
