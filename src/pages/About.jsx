@@ -25,7 +25,7 @@ function About() {
   return (
     <div className='text-white max-w-7xl mx-auto h-auto py-10 md:py-20 px-6 md:px-12'>
       
-      <h1 className='uppercase font-semibold text-3xl md:text-4xl pb-10 md:pb-16 mt-10 md:mt-20 text-center'>
+      <h1 className='uppercase font-semibold text-3xl hidden md:text-4xl pb-10 md:pb-16 mt-10 md:mt-20 text-center'>
         about me
       </h1>
 
@@ -33,7 +33,7 @@ function About() {
       <div className='flex flex-col md:flex-row w-full gap-10 md:gap-16 justify-between items-center'>
         
         {/* Profile Image */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 md:mt-0 mt-20">
           <img 
             src="/images/cat-pic2.jpg" 
             alt="profile-pic" 
