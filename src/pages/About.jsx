@@ -51,7 +51,7 @@ function About() {
           </p>
 
           {/* Buttons */}
-          <div className='flex w-full flex-wrap justify-start md:justify-start gap-2 md:gap-4 mt-8'>
+          <div className='flex w-full flex-wrap justify-center md:justify-start gap-2 md:gap-4 mt-8'>
             <button className='bg-(--primary) hover:bg-(--primary-foreground) py-3 px-6 rounded-full text-white font-medium flex items-center gap-3 hover:scale-105 hover:text-black cursor-pointer transition-all duration-300 shadow-lg'>
               Download Resume<GoDotFill/>
             </button>
