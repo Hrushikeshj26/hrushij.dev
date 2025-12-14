@@ -2,11 +2,11 @@ import React from 'react'
 
 function Projects({props}) {
   return (
-    <div className='flex flex-col md:flex-row gap-8 w-full items-center justify-evenly p-6 md:p-0 bg-gray-800 rounded-2xl'>
+    <div className='flex flex-col md:flex-row gap-8 w-full items-center justify-evenly p-6 bg-gray-800 rounded-2xl'>
         <div className='rounded-xl w-2/2 md:w-2/3 flex items-center flex-col'>
             <img src={props.imageUrl}
             alt="project-demo" 
-            className='object-cover rounded-xl w-full h-60'
+            className='object-cover rounded-xl w-full h-60 md:h-70'
             />
         </div>
         <div className='w-full flex gap-2 flex-col'>

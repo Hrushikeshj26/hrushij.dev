@@ -13,7 +13,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="bg-(--background) font-share">
+    <div className="bg-(--background) font-share ">
       <Navbar/>
         <Routes>
           <Route path="/" element={
