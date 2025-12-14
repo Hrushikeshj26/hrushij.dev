@@ -11,7 +11,7 @@ function Hero() {
           <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6'>
             HI, I AM <br /> HRUSHIKESH JADHAV.
           </h1>
-          <p className='max-w-xl text-gray-300 py-2 md:py-6 text-base sm:text-lg md:text-xl leading-relaxed mx-8 md:mx-0 '>
+          <p className='max-w-xl text-gray-300 py-2 md:py-6 text-base sm:text-sm md:text-xl leading-relaxed mx-8 md:mx-0 '>
             Frontend Developer crafting clean, engaging, and performant web experiences. I'm driven by a passion for solving problems and building intuitive digital products.
           </p>
           <div className='flex justify-center md:justify-start gap-4 mt-8'>

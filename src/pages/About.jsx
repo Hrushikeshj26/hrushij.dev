@@ -33,7 +33,7 @@ function About() {
       <div className='flex flex-col md:flex-row w-full gap-10 md:gap-16 justify-between items-center'>
         
         {/* Profile Image */}
-        <div className="flex-shrink-0 md:mt-0 mt-20">
+        <div className="flex shrink-0 md:mt-0 mt-20">
           <img 
             src="/images/cat-pic2.jpg" 
             alt="profile-pic" 
