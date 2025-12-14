@@ -23,7 +23,7 @@ function Projects({props}) {
                   {props.techStack.map((tech) => (
                     <span 
                       key={tech}
-                      className="bg-(--skills-color) text-gray-300 text-[1rem] font-extralight px-3 py-1 mt-2 rounded-full"
+                      className="bg-(--skills-color) text-white text-[1rem] font-extralight px-3 py-1 mt-2 rounded-full"
                     >
                       {tech}
                     </span>
