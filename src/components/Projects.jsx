@@ -10,7 +10,7 @@ function Projects({props}) {
             />
         </div>
         <div className='w-full flex gap-2 flex-col'>
-            <h2 className='md:text-3xl text-xl font-medium'>{props.name}</h2>
+            <h2 className='md:text-3xl text-xl font-semibold'>{props.name}</h2>
             <p className='w-full text-gray-400 text-base'>{props.info}</p>
 
             <div>
