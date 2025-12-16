@@ -5,6 +5,7 @@ import Hero2 from "./components/Hero2"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
+import ScrollToTop from "./components/ScroolToTop"
 
 
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="bg-(--color-dark-page)">
       <Navbar/>
+      <ScrollToTop/>
         <Routes>
           <Route path="/" element={
             <>

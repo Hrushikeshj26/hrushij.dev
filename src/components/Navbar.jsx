@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdCancel } from "react-icons/md";
 
@@ -21,29 +21,39 @@ function Navbar() {
 
 
   return (
-    <div className='fixed w-full h-20 bg-(--color-dark-page) flex justify-between items-center px-6 md:px-16 text-white z-50 shadow-md'>
+    <div className='fixed w-full h-20 bg-(--color-dark-page) flex justify-between items-center px-6 md:px-16 text-white shadow-md'>
         
         {/* Logo */}
-        <a href='/' className='text-xl md:text-[1.5rem] font-semibold z-10'>
+        <a href='/' className='text-xl md:text-[1.5rem] font-semibold'>
           Hrushij.Dev
         </a>
 
         {/* Desktop Menu (Hidden on Mobile) */}
-        <ul className='hidden md:flex gap-10 text-[1.1rem]'>
-            <li>
-              <Link to="/" className="cursor-pointer hover:text-(--color-secondary) transition-colors border-b-3 border-(--color-primary)">
+        <div className='hidden md:flex gap-10 text-[1.1rem]'>
+              <NavLink to="/" className={({ isActive }) => 
+              isActive
+              ? "border-b-3 border-(--color-primary)"
+              : "hover:text-gray-300"
+              }>
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="cursor-pointer hover:text-(--primary-foreground-2) transition-colors">
+              </NavLink>
+            
+              <NavLink to="/about" className={({ isActive }) => 
+              isActive
+              ? "border-b-3 border-(--color-primary)"
+              : "hover:text-gray-300"
+              }>
                 About
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="hover:text-(--primary-foreground-2) transition-colors">Contact</Link>
-            </li>
-        </ul>
+              </NavLink>
+            
+              <NavLink to="/contact" className={({ isActive }) => 
+              isActive
+              ? "border-b-3 border-(--color-primary)"
+              : "hover:text-gray-300"
+              }>
+                Contact
+              </NavLink>
+        </div>
 
         {/* Hamburger Icon (Visible on Mobile) */}
         <div onClick={handleClick} className='md:hidden z-10 cursor-pointer hover:text-blue-400 transition-colors'>
@@ -56,23 +66,31 @@ function Navbar() {
             ? 'hidden' 
             : 'absolute top-0 left-0 w-full h-screen bg-black/95 flex flex-col justify-center items-center transition-all duration-300'
         }>
-            <ul className='flex flex-col gap-8 text-3xl font-semibold text-center'>
-                <li>
-                  <Link to="/" onClick={closeMenu} className="hover:text-blue-400 transition-colors">
+            <div className='flex flex-col gap-8 text-3xl font-semibold text-center'>
+                  <NavLink to="/" className={({ isActive }) => 
+                  isActive
+                  ? "border-b-3 border-(--color-primary)"
+                  : "hover:text-gray-300"
+                  }>
                     Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about" onClick={closeMenu} className="hover:text-blue-400 transition-colors">
+                  </NavLink>
+                
+                  <NavLink to="/about" className={({ isActive }) => 
+                  isActive
+                  ? "border-b-3 border-(--color-primary)"
+                  : "hover:text-gray-300"
+                  }>
                     About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" onClick={closeMenu} className="hover:text-blue-400 transition-colors">
+                  </NavLink>
+                
+                  <NavLink to="/contact" className={({ isActive }) => 
+                  isActive
+                  ? "border-b-3 border-(--color-primary)"
+                  : "hover:text-gray-300"
+                  }>
                     Contact
-                  </Link>
-                </li>
-            </ul>
+                  </NavLink>
+            </div>
         </div>
     </div>
   )
