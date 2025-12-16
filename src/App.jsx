@@ -13,12 +13,12 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="bg-(--background) font-share ">
+    <div className="bg-(--color-dark-page)">
       <Navbar/>
         <Routes>
           <Route path="/" element={
             <>
-              <Hero/>
+              <Hero className= 'font-nato'/>
               <Hero2/>
             </>
           }/>

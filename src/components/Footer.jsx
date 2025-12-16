@@ -39,28 +39,28 @@ function Footer() {
 
   return (
     <div id='contact' className='text-white max-w-7xl mx-auto flex md:gap-5 md:flex-row flex-col p-4'>
-        <div className='pt-15'>
-            <h2 className='uppercase font-semibold text-4xl md:text-5xl pb-4'>let's connect</h2>
-            <p className='text-lg w-full'>Let's build something great together. Reach out if you're looking for a developer, have a query, or simply want to connect.</p>
+        <div className='md:pt-15 pt-5'>
+            <h2 className='uppercase font-semibold text-2xl md:text-5xl pb-4'>let's connect</h2>
+            <p className='md:text-lg w-full text-gray-400'>Let's build something great together. Reach out if you're looking for a developer, have a query, or simply want to connect.</p>
             <div className='w-45 flex gap-2 my-5'>
                 <a
                 href="https://www.linkedin.com/in/hrushikeshj26/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className='bg-(--primary-foreground-1) py-3 px-3 rounded-full text-black hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--primary-foreground-2) hover:scale-105 transition-all duration-300 shadow-lg'>
+                className='bg-(--color-secondary) py-3 px-3 rounded-full text-black hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'>
                     <FaLinkedinIn />
                 </a>
                 <a
                     href="https://github.com/Hrushikeshj26" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className='bg-(--primary-foreground-1) py-3 px-3 rounded-full text-black hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--primary-foreground-2) hover:scale-105 transition-all duration-300 shadow-lg'>
+                    className='bg-(--color-secondary) py-3 px-3 rounded-full text-black hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'>
                         <FaGithub />
                 </a>
             </div>
         </div>
         
-        <form onSubmit={handleSubmit} className='flex flex-col md:w-1/2 p-8 gap-1'>
+        <form onSubmit={handleSubmit} className='flex flex-col md:w-1/2 px-2 md:p-8 gap-1'>
             <label htmlFor="name">Name</label>
             <input 
                 type="text"
@@ -105,7 +105,7 @@ function Footer() {
             
             <button
                 type="submit"
-                className='bg-(--primary) hover:bg-(--primary-foreground) py-3 px-6 rounded-full text-white hover:text-black font-medium flex items-center gap-10 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg w-35 justify-center'
+                className='bg-(--color-primary) hover:bg-(--color-secondary) py-3 px-6 rounded-full text-white font-medium flex items-center gap-10 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg w-35 justify-center md:mb-0 mb-15'
             >Submit</button>
         </form>
     </div>

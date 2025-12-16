@@ -54,10 +54,10 @@ const projectList = [
 
   return (
     <div className='text-white max-w-7xl md:mx-auto mx-3'>
-      <hr className='pt-10 mx-5 md:pb-15' />
-        <h1 className='uppercase font-semibold text-4xl md:text-5xl p-2'>Featured Projects</h1>
-        <p className='text-xl p-2 sm:text-lg'>Here are some of the selected projects that showcase my passion for front-end development.</p>
-    <div className='my-5 pb-15 w-full flex flex-col gap-15 items-center justify-center'>
+      <hr className='mx-5 pb-5 md:pb-10' />
+        <h1 className='uppercase font-semibold text-2xl md:text-4xl p-2'>Featured Projects</h1>
+        <p className='md:text-xl p-2 text-sm text-gray-300'>Here are some of the selected projects that showcase my passion for front-end development.</p>
+    <div className='my-10 pb-10 w-full flex flex-col gap-15 items-center justify-center'>
         {projectList.map((projects)=>{
             return(
                 <Projects key={projects.id} props={projects}/>

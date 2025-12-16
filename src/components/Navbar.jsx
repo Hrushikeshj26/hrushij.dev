@@ -21,17 +21,17 @@ function Navbar() {
 
 
   return (
-    <div className='fixed w-full h-20 bg-(--navbar) flex justify-between items-center px-6 md:px-16 text-white z-50 shadow-md'>
+    <div className='fixed w-full h-20 bg-(--color-dark-page) flex justify-between items-center px-6 md:px-16 text-white z-50 shadow-md'>
         
         {/* Logo */}
-        <a href='/' className='text-2xl md:text-[1.6rem] font-bold z-10'>
+        <a href='/' className='text-xl md:text-[1.5rem] font-semibold z-10'>
           Hrushij.Dev
         </a>
 
         {/* Desktop Menu (Hidden on Mobile) */}
-        <ul className='hidden md:flex gap-10 font-medium text-xl'>
+        <ul className='hidden md:flex gap-10 text-[1.1rem]'>
             <li>
-              <Link to="/" className="cursor-pointer hover:text-(--primary-foreground-2) transition-colors">
+              <Link to="/" className="cursor-pointer hover:text-(--color-secondary) transition-colors border-b-3 border-(--color-primary)">
                 Home
               </Link>
             </li>

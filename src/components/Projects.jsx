@@ -2,34 +2,34 @@ import React from 'react'
 
 function Projects({props}) {
   return (
-    <div className='flex flex-col md:flex-row gap-8 w-full items-center justify-evenly p-6 bg-gray-800 rounded-2xl'>
+    <div className='flex flex-col md:flex-row gap-8 w-full items-center justify-evenly bg-gray-800 rounded-2xl shadow-blue-800 shadow-lg overflow-hidden'>
         <div className='rounded-xl w-2/2 md:w-2/3 flex items-center flex-col'>
             <img src={props.imageUrl}
             alt="project-demo" 
-            className='object-cover rounded-xl w-full h-60 md:h-70'
+            className='object-cover w-full h-fit'
             />
         </div>
-        <div className='w-full flex gap-2 flex-col'>
-            <h2 className='md:text-3xl text-xl font-semibold'>{props.name}</h2>
+        <div className='w-full flex gap-1 flex-col p-4'>
+            <h2 className='md:text-2xl text-xl font-semibold'>{props.name}</h2>
             <p className='w-full text-gray-400 text-base'>{props.info}</p>
 
             <div>
-              <div className='border border-blue-300 w-full h-full p-3 mt-4 rounded-xl'>
-                <h3 className='md:text-xl text-lg'>Tech Stack</h3>
+              <div className='w-full h-full p-3 mt-4 rounded-xl'>
+                <h3 className='text-lg'>Tech Stack</h3>
                 <hr className='border-gray-400 my-2'/>
           
-                <div className='flex flex-wrap justify-center gap-1.5'>
+                <div className='flex flex-wrap justify-start gap-2'>
                   {/* Map over the techStack array */}
                   {props.techStack.map((tech) => (
                     <span 
                       key={tech}
-                      className="bg-(--skills-color) text-white text-[1rem] font-extralight px-3 py-1 mt-2 rounded-full"
+                      className="bg-(--color-primary) text-white text-sm px-3 py-1 mt-2 rounded-full"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className='flex items-center justify-center gap-8 text-(--primary-foreground-1) underline mt-6'>
+                <div className='flex items-center justify-start gap-4 text-gray-300 underline underline-offset-4 mt-10'>
                     <a 
                       href={props.liveDemo} // <-- Use your project data
                       target="_blank" 

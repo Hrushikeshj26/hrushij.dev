@@ -37,7 +37,7 @@ function About() {
           <img 
             src="/images/cat-pic2.jpg" 
             alt="profile-pic" 
-            className='w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-(--primary) shadow-2xl'
+            className='w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-(--color-primary) shadow-2xl'
           />
         </div>
 
@@ -52,7 +52,7 @@ function About() {
 
           {/* Buttons */}
           <div className='flex w-full flex-wrap justify-center md:justify-start gap-2 md:gap-4 mt-8'>
-            <button className='bg-(--primary) hover:bg-(--primary-foreground) py-3 px-6 rounded-full text-white font-medium flex items-center gap-3 hover:scale-105 hover:text-black cursor-pointer transition-all duration-300 shadow-lg'>
+            <button className='bg-(--color-primary) hover:bg-(--color-secondary) py-3 px-6 rounded-full text-white font-medium flex items-center gap-3 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg'>
               Download Resume<GoDotFill/>
             </button>
             
@@ -60,7 +60,7 @@ function About() {
               href="https://www.linkedin.com/in/your-linkedin-profile/"
               target="_blank"
               rel="noopener noreferrer"
-              className='bg-(--primary-foreground-1) p-3 rounded-full text-black hover:text-white hover:bg-(--primary-foreground-2) hover:scale-105 transition-all duration-300 shadow-lg'
+              className=' bg-(--color-secondary) p-3 rounded-full text-black hover:text-white hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'
             >
               <FaLinkedinIn size={24} />
             </a>
@@ -69,7 +69,7 @@ function About() {
               href="https://github.com/your-github-profile" 
               target="_blank"
               rel="noopener noreferrer"
-              className='bg-(--primary-foreground-1) p-3 rounded-full text-black hover:text-white hover:bg-(--primary-foreground-2) hover:scale-105 transition-all duration-300 shadow-lg'
+              className=' bg-(--color-secondary) p-3 rounded-full text-black hover:text-white hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'
             >
               <FaGithub size={24} />
             </a>
@@ -97,7 +97,7 @@ function About() {
                 {category.skills.map((skill, skillIndex) => (
                   <span 
                     key={skillIndex}
-                    className="bg-(--skills-color) text-white text-sm md:text-base font-medium px-4 py-2 rounded-full hover:bg-blue-600 hover:scale-105 transition-all duration-300 cursor-default shadow-md"
+                    className="bg-(--color-primary) text-white text-sm md:text-base font-medium px-4 py-2 rounded-full hover:bg-blue-600 hover:scale-105 transition-all duration-300 cursor-default shadow-md"
                   >
                     {skill}
                   </span>
