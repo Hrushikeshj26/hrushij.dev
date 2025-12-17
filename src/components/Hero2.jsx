@@ -6,9 +6,9 @@ function Hero2() {
 const projectList = [
   {
     id: 1,
-    name: "NovaCrypto – Cryptocurrency Tracker",
-    info: "A responsive crypto tracker with real-time data from the CoinGecko API. Uses Context API for global state (e.g., currency) and React Router for dynamic routing.",
-    techStack: ["React.js", "Tailwind CSS", "Context API", "CoinGecko API", "React Google Chart"],
+    name: "Nexora – E-commerce Website",
+    info: "A fully responsive e-commerce website, built with React.js and Tailwind CSS, featuring a clean UI, dynamic routing, product listings, and a reusable component-based architecture.",
+    techStack: ["HTML", "CSS", "React.js", "Tailwind CSS", "Context API", "React-Hot-Toast", "React Router"],
     liveDemo: "https://nexora-shop.vercel.app/",
     githubCode: "https://github.com/Hrushikeshj26/Nexora",
     imageUrl: "./images/Nexora-demo.png"
@@ -17,7 +17,7 @@ const projectList = [
     id: 2,
     name: "TechNest – Personal Tech Blog Website",
     info: "A fully responsive personal tech blog with a clean UI, search functionality, and dynamic routing. Built with a focus on a reusable component-based architecture.",
-    techStack: ["React.js", "Tailwind CSS", "React Router"],
+    techStack: ["HTML", "CSS", "React.js", "Tailwind CSS", "React Router"],
     liveDemo: "https://tech-nestt.vercel.app/",
     githubCode: "https://github.com/Hrushikeshj26/TechNest",
     imageUrl: "./images/TechNest-demo.jpg"
@@ -26,7 +26,7 @@ const projectList = [
     id: 3,
     name: "NovaCrypto – Cryptocurrency Tracker",
     info: "A responsive crypto tracker with real-time data from the CoinGecko API. Uses Context API for global state (e.g., currency) and React Router for dynamic routing.",
-    techStack: ["React.js", "Tailwind CSS", "Context API", "CoinGecko API", "React Google Chart"],
+    techStack: ["HTML", "CSS", "React.js", "Tailwind CSS", "Context API", "CoinGecko API", "React Google Chart"],
     liveDemo: "https://novacrypto.vercel.app/",
     githubCode: "https://github.com/Hrushikeshj26/NovaCrypto",
     imageUrl: "./images/NovaCrypto-demo.png"
@@ -35,7 +35,7 @@ const projectList = [
     id: 4,
     name: "HealThrive – Mental Wellness Landing Page",
     info: "A fully responsive and mobile-friendly landing page built with React.js and Tailwind CSS. Integrated AOS (Animate On Scroll) for smooth scroll-based animations.",
-    techStack: ["React.js", "Tailwind CSS", "AOS Animation"],
+    techStack: ["HTML", "CSS", "React.js", "Tailwind CSS", "AOS Animation"],
     liveDemo: "https://heal-thrive.vercel.app/",
     githubCode: "https://github.com/Hrushikeshj26/HealThrive",
     imageUrl: "./images/HealThrive-demo.png"
