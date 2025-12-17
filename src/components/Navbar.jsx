@@ -64,7 +64,7 @@ function Navbar() {
         <div className={
             !nav 
             ? 'hidden' 
-            : 'absolute top-0 left-0 w-full h-screen bg-black/95 flex flex-col justify-center items-center transition-all duration-300'
+            : 'absolute top-0 left-0 w-full h-screen dark:bg-black/90 bg-white/90 flex flex-col justify-center items-center transition-all duration-300'
         }>
             <div className='flex flex-col gap-8 text-3xl font-semibold text-center'>
                   <NavLink to="/" className={({ isActive }) => 
