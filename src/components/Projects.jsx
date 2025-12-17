@@ -3,10 +3,10 @@ import React from 'react'
 function Projects({props}) {
   return (
     <div className='flex flex-col md:flex-row gap-8 w-full items-center justify-evenly dark:bg-gray-800 bg-gray-100 rounded-2xl shadow-blue-800 shadow-lg overflow-hidden'>
-        <div className='rounded-xl w-2/2 md:w-2/3 flex items-center flex-col'>
+        <div className='rounded-xl w-full h-55 md:h-85 flex items-center flex-col'>
             <img src={props.imageUrl}
             alt="project-demo" 
-            className='object-cover w-full h-fit'
+            className='object-cover w-full h-full'
             />
         </div>
         <div className='w-full flex gap-1 flex-col p-4'>
