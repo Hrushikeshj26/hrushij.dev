@@ -21,10 +21,10 @@ function Navbar() {
 
 
   return (
-    <div className='fixed w-full h-20 bg-(--color-dark-page) flex justify-between items-center px-6 md:px-16 text-white shadow-md'>
+    <div className='fixed w-full h-20 dark:bg-(--color-dark-page) bg-(--color-light-page) flex justify-between items-center px-6 md:px-16 dark:text-white shadow-md'>
         
         {/* Logo */}
-        <a href='/' className='text-xl md:text-[1.5rem] font-semibold'>
+        <a href='/' className='text-xl md:text-[1.5rem] font-bold'>
           Hrushij.Dev
         </a>
 
@@ -33,7 +33,7 @@ function Navbar() {
               <NavLink to="/" className={({ isActive }) => 
               isActive
               ? "border-b-3 border-(--color-primary)"
-              : "hover:text-gray-300"
+              : "dark:hover:text-gray-300 hover:text-gray-600"
               }>
                 Home
               </NavLink>
@@ -41,7 +41,7 @@ function Navbar() {
               <NavLink to="/about" className={({ isActive }) => 
               isActive
               ? "border-b-3 border-(--color-primary)"
-              : "hover:text-gray-300"
+              : "dark:hover:text-gray-300 hover:text-gray-600"
               }>
                 About
               </NavLink>
@@ -49,7 +49,7 @@ function Navbar() {
               <NavLink to="/contact" className={({ isActive }) => 
               isActive
               ? "border-b-3 border-(--color-primary)"
-              : "hover:text-gray-300"
+              : "dark:hover:text-gray-300 hover:text-gray-600"
               }>
                 Contact
               </NavLink>

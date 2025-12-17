@@ -23,9 +23,9 @@ function About() {
   ];
 
   return (
-    <div className='text-white max-w-7xl mx-auto h-auto py-10 md:py-20 px-6 md:px-12'>
+    <div className='dark:text-white max-w-7xl mx-auto h-auto py-10 md:py-20 px-6 md:px-12'>
       
-      <h1 className='uppercase font-semibold text-3xl hidden md:flex md:text-4xl pb-10 md:pb-16 mt-10 md:mt-20 justify-center'>
+      <h1 className='uppercase font-bold text-3xl hidden md:flex md:text-4xl pb-10 md:pb-16 mt-10 md:mt-20 justify-center'>
         about me
       </h1>
 
@@ -46,7 +46,7 @@ function About() {
           <p className='text-2xl md:text-4xl pb-5 font-medium leading-tight'>
             I am a front-end developer based in India.
           </p>
-          <p className='text-base md:text-lg text-gray-300 leading-relaxed'>
+          <p className='text-base md:text-lg dark:text-gray-300 leading-relaxed'>
             I am a Frontend Developer looking for exciting opportunities. I have a background in Computer Applications (BCA). I like to focus on accessibility and performance when developing. Passionate and curious about solving problems. Currently, I’m exploring the React.js ecosystem, Webflow, and UI Designing. While I am not programming, I enjoy gaming. Always learning to improve my skills.
           </p>
 
@@ -60,7 +60,7 @@ function About() {
               href="https://www.linkedin.com/in/your-linkedin-profile/"
               target="_blank"
               rel="noopener noreferrer"
-              className=' bg-(--color-secondary) p-3 rounded-full text-black hover:text-white hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'
+              className=' bg-(--color-secondary) p-3 rounded-full dark:text-black text-white hover:text-white hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'
             >
               <FaLinkedinIn size={24} />
             </a>
@@ -69,7 +69,7 @@ function About() {
               href="https://github.com/your-github-profile" 
               target="_blank"
               rel="noopener noreferrer"
-              className=' bg-(--color-secondary) p-3 rounded-full text-black hover:text-white hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'
+              className=' bg-(--color-secondary) p-3 rounded-full dark:text-black text-white hover:text-white hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'
             >
               <FaGithub size={24} />
             </a>
@@ -81,7 +81,7 @@ function About() {
 
       {/* Skills Section */}
       <div className='flex w-full gap-8 justify-between items-center flex-col'>
-        <h1 className='uppercase font-semibold text-3xl md:text-4xl pb-5 mt-10 md:mt-16 text-center'>
+        <h1 className='uppercase font-bold text-3xl md:text-4xl pb-5 mt-10 md:mt-16 text-center'>
           My Skills
         </h1>
         
@@ -89,7 +89,7 @@ function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full">
           {skillCategories.map((category, index) => (
             <div key={index} className="mb-4 md:mb-8 text-center md:text-left">
-              <h3 className="text-xl md:text-2xl font-semibold text-gray-300 mb-4 md:mb-6">
+              <h3 className="text-xl md:text-2xl font-semibold dark:text-gray-300 mb-4 md:mb-6">
                 {category.title}
               </h3>
               

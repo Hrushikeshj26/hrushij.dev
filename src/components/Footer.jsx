@@ -38,23 +38,23 @@ function Footer() {
   };
 
   return (
-    <div id='contact' className='text-white max-w-7xl mx-auto flex md:gap-5 md:flex-row flex-col p-4'>
+    <div id='contact' className='dark:text-white max-w-7xl mx-auto flex md:gap-5 md:flex-row flex-col p-4'>
         <div className='md:pt-15 pt-5'>
             <h2 className='uppercase font-semibold text-2xl md:text-5xl pb-4'>let's connect</h2>
-            <p className='md:text-lg w-full text-gray-400'>Let's build something great together. Reach out if you're looking for a developer, have a query, or simply want to connect.</p>
+            <p className='md:text-lg w-full dark:text-gray-400 text-gray-800'>Let's build something great together. Reach out if you're looking for a developer, have a query, or simply want to connect.</p>
             <div className='w-45 flex gap-2 my-5'>
                 <a
                 href="https://www.linkedin.com/in/hrushikeshj26/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className='bg-(--color-secondary) py-3 px-3 rounded-full text-black hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'>
+                className='bg-(--color-secondary) py-3 px-3 rounded-full dark:text-black text-white hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'>
                     <FaLinkedinIn />
                 </a>
                 <a
                     href="https://github.com/Hrushikeshj26" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className='bg-(--color-secondary) py-3 px-3 rounded-full text-black hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'>
+                    className='bg-(--color-secondary) py-3 px-3 rounded-full dark:text-black text-white hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'>
                         <FaGithub />
                 </a>
             </div>
@@ -68,7 +68,7 @@ function Footer() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder='your name' 
-                className='p-2 bg-gray-800 rounded mb-2'
+                className='p-2 bg-gray-800 rounded mb-2 placeholder-gray-400'
                 required
             />
             
@@ -79,7 +79,7 @@ function Footer() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder='your email'
-                className='p-2 bg-gray-800 rounded mb-2' 
+                className='p-2 bg-gray-800 rounded mb-2 placeholder-gray-400' 
                 required
             />
             
