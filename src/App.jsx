@@ -14,7 +14,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="bg-(--color-dark-page)">
+    <div className=" dark:bg-black bg-white background-color">
       <Navbar/>
       <ScrollToTop/>
         <Routes>
