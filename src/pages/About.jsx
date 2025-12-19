@@ -25,7 +25,7 @@ function About() {
   return (
     <div className='dark:text-white max-w-7xl mx-auto h-auto py-10 md:py-20 px-6 md:px-12'>
       
-      <h1 className='uppercase font-bold text-3xl hidden md:flex md:text-4xl pb-10 md:pb-16 mt-10 md:mt-20 justify-center'>
+      <h1 className='uppercase font-semibold text-3xl hidden md:flex md:text-3xl pb-10 md:pb-16 mt-10 md:mt-20 justify-center'>
         about me
       </h1>
 
@@ -44,15 +44,15 @@ function About() {
         {/* Text Content */}
         <div className='flex flex-col w-full md:w-1/2 text-center md:text-left'>
           <p className='text-2xl md:text-4xl pb-5 font-medium leading-tight'>
-            I am a front-end developer based in India.
+            I am a <span className='text-(--color-primary) font-semibold'>front-end developer</span> based in India.
           </p>
-          <p className='text-base md:text-lg dark:text-gray-300 leading-relaxed'>
+          <p className='text-sm md:text-lg dark:text-gray-300 leading-relaxed'>
             I am a Frontend Developer looking for exciting opportunities. I have a background in Computer Applications (BCA). I like to focus on accessibility and performance when developing. Passionate and curious about solving problems. Currently, I’m exploring the React.js ecosystem, Webflow, and UI Designing. While I am not programming, I enjoy gaming. Always learning to improve my skills.
           </p>
 
           {/* Buttons */}
-          <div className='flex w-full flex-wrap justify-center md:justify-start gap-2 md:gap-4 mt-8'>
-            <button className='bg-(--color-primary) hover:bg-(--color-secondary) py-3 px-6 rounded-full text-white font-medium flex items-center gap-3 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg'>
+          <div className='flex w-full flex-wrap justify-start md:justify-start gap-2 md:gap-4 mt-8'>
+            <button className='bg-(--color-primary) hover:bg-(--color-secondary) py-3 md:px-6 px-5 rounded-full text-white font-medium flex items-center gap-2 md:gap-3 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg'>
               Download Resume<GoDotFill/>
             </button>
             
@@ -81,15 +81,15 @@ function About() {
 
       {/* Skills Section */}
       <div className='flex w-full gap-8 justify-between items-center flex-col'>
-        <h1 className='uppercase font-bold text-3xl md:text-4xl pb-5 mt-10 md:mt-16 text-center'>
+        <h1 className='uppercase font-semibold text-2xl md:text-3xl pb-5 mt-10 md:mt-16 text-center'>
           My Skills
         </h1>
         
         {/* Skills Grid: 1 column on mobile, 2 columns on desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-12 w-full">
           {skillCategories.map((category, index) => (
             <div key={index} className="mb-4 md:mb-8 text-center md:text-left">
-              <h3 className="text-xl md:text-2xl font-semibold dark:text-gray-300 mb-4 md:mb-6">
+              <h3 className="text-lg md:text-xl font-semibold dark:text-gray-400 mb-4 md:mb-6">
                 {category.title}
               </h3>
               

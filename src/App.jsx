@@ -14,7 +14,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className=" dark:bg-black bg-white background-color">
+    <div className=" dark:bg-[#0c0a09] bg-[#f5f5f4] background-color font-Parkinsans tracking-wider">
       <Navbar/>
       <ScrollToTop/>
         <Routes>

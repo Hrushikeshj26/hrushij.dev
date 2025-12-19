@@ -40,8 +40,8 @@ function Footer() {
   return (
     <div id='contact' className='dark:text-white max-w-7xl mx-auto flex md:gap-5 md:flex-row flex-col p-4'>
         <div className='md:pt-15 pt-5'>
-            <h2 className='uppercase font-semibold text-2xl md:text-5xl pb-4'>let's connect</h2>
-            <p className='md:text-lg w-full dark:text-gray-400 text-gray-800'>Let's build something great together. Reach out if you're looking for a developer, have a query, or simply want to connect.</p>
+            <h2 className='uppercase font-semibold text-2xl md:text-4xl pb-4'>let's connect</h2>
+            <p className='md:text-base text-sm w-full dark:text-gray-400 text-gray-800'>Let's build something great together. Reach out if you're looking for a developer, have a query, or simply want to connect.</p>
             <div className='w-45 flex gap-2 my-5'>
                 <a
                 href="https://www.linkedin.com/in/hrushikeshj26/" 
@@ -68,7 +68,7 @@ function Footer() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder='your name' 
-                className='p-2 bg-gray-800 rounded mb-2 placeholder-gray-400'
+                className='p-3 dark:bg-gray-800 bg-gray-300 rounded mb-2 text-sm dark:placeholder-gray-400 placeholder-gray-600'
                 required
             />
             
@@ -79,7 +79,7 @@ function Footer() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder='your email'
-                className='p-2 bg-gray-800 rounded mb-2 placeholder-gray-400' 
+                className='p-3 dark:bg-gray-800 bg-gray-300 rounded mb-2 text-sm dark:placeholder-gray-400 placeholder-gray-600' 
                 required
             />
             
@@ -89,7 +89,7 @@ function Footer() {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className='p-2 bg-gray-800 rounded mb-2'
+                className='p-3 dark:bg-gray-800 bg-gray-300 rounded mb-2 text-sm dark:placeholder-gray-400 placeholder-gray-600'
                 required
             />
             
@@ -99,13 +99,13 @@ function Footer() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className='p-2 bg-gray-800 rounded mb-2' 
+                className='p-3 dark:bg-gray-800 bg-gray-300 rounded mb-2 text-sm dark:placeholder-gray-400 placeholder-gray-600' 
                 required
             />
             
             <button
                 type="submit"
-                className='bg-(--color-primary) hover:bg-(--color-secondary) py-3 px-6 rounded-full text-white font-medium flex items-center gap-10 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg w-35 justify-center md:mb-0 mb-15'
+                className='bg-(--color-primary) hover:bg-(--color-secondary) py-3 px-6 rounded-full text-white font-medium flex items-center gap-10 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg w-35 justify-center md:mb-0 mb-15 text-sm'
             >Submit</button>
         </form>
     </div>

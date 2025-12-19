@@ -15,15 +15,15 @@ function Hero() {
               HRUSHIKESH JADHAV.
             </span>
           </h1>
-          <p className="max-w-xl dark:text-gray-300 py-2 md:py-6 text-lg md:text-xl leading-relaxed mx-8 md:mx-0 ">
+          <p className="max-w-xl dark:text-gray-300 py-2 md:py-6 text-base md:text-xl leading-relaxed mx-8 md:mx-0 ">
             Frontend Developer crafting clean, engaging, and performant web
             experiences. I'm driven by a passion for solving problems and
             building intuitive digital products.
           </p>
-          <div className="flex justify-center md:justify-start gap-1 md:gap-3 mt-8">
+          <div className="flex justify-center md:justify-start gap-2 md:gap-3 mt-8">
             <Link
               to="/contact"
-              className="bg-(--color-primary) py-3 px-6 rounded-full text-white font-medium flex items-center gap-10
+              className="bg-(--color-primary) py-3 px-4 md:px-6 rounded-full text-white font-medium flex items-center gap-2 md:gap-10
                          hover:bg-(--color-secondary) hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg"
             >
               CONTACT ME <GoDotFill className="text-sm" />

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { GoLightBulb } from "react-icons/go";
 
 
 export default function ThemeToggle() {
@@ -21,7 +22,7 @@ export default function ThemeToggle() {
         transition
       "
     >
-      {dark ? <MdLightMode className="text-2xl text-black"/> : <MdDarkMode className="text-2xl text-white"/>}
+      {dark ? <GoLightBulb  className="text-2xl text-black"/> : <MdDarkMode className="text-2xl text-white"/>}
     </button>
   );
 }

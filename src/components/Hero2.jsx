@@ -56,7 +56,7 @@ const projectList = [
     <div className='text-white max-w-7xl md:mx-auto mx-3'>
       <hr className='mx-5 pb-5 md:pb-10 text-black dark:text-gray-50' />
         <h1 className='uppercase font-bold text-2xl md:text-4xl p-2 text-black dark:text-white'>Featured Projects</h1>
-        <p className='md:text-xl p-2 text-sm dark:text-gray-300 text-gray-800'>Here are some of the selected projects that showcase my passion for front-end development.</p>
+        <p className='md:text-lg p-2 text-sm dark:text-gray-200 text-gray-800'>Here are some of the selected projects that showcase my passion for front-end development.</p>
     <div className='my-10 pb-10 w-full flex flex-col gap-15 items-center justify-center'>
         {projectList.map((projects)=>{
             return(

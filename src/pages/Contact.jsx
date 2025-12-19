@@ -37,10 +37,10 @@ function Contact() {
         
         {/* Left Side: Text & Contact Info */}
         <div className="w-full md:w-1/2 flex flex-col justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold uppercase mb-6 leading-tight">
+          <h1 className="text-2xl md:text-3xl font-semibold uppercase mb-6 leading-tight">
             Let's connect
           </h1>
-          <p className="dark:text-gray-300 text-gray-800 text-lg md:text-xl mb-10 leading-relaxed">
+          <p className="dark:text-gray-400 text-gray-800 text-sm md:text-lg mb-10 leading-relaxed">
             I'm currently available for freelance work and open to full-time opportunities. 
             Whether you have a project idea, a question, or just want to say hi, 
             my inbox is always open!
@@ -49,16 +49,16 @@ function Contact() {
           <div className="flex flex-col gap-6">
              <a 
                href="mailto:hrushij92@gmail.com" 
-               className="flex items-center gap-4 text-xl md:text-2xl hover:text-blue-400 transition-colors font-semibold group"
+               className="flex items-center gap-4 text-base md:text-xl hover:text-blue-400 transition-colors font-semibold group"
              >
-               <div className="bg-(--color-secondary) py-4 px-4 rounded-full dark:text-black text-white text-2xl font-semibold flex items-center justify-center
+               <div className="bg-(--color-secondary) py-4 px-4 rounded-full dark:text-black text-white font-semibold flex items-center justify-center
                        hover:bg-(--color-secondary-hover) hover:text-white hover:scale-105 transition-all duration-300 shadow-lg">
                  <MdMail size={20} />
                </div>
                hrushij92@gmail.com
              </a>
              
-             <div className='flex gap-6 mt-4'>
+             <div className='flex gap-3 mt-4'>
                <a 
                  href="https://www.linkedin.com/in/hrushikeshj26/" 
                  target="_blank"
@@ -82,7 +82,7 @@ function Contact() {
         </div>
 
         {/* Right Side: Contact Form */}
-        <div className="w-full md:w-1/2 dark:bg-(--color-dark-page) bg-(--color-light-page) p-8 md:p-10 rounded-3xl border shadow-2xl">
+        <div className="w-full md:w-1/2 dark:bg-(--color-dark-page) bg-(--color-light-page) p-4 md:p-10 rounded-3xl border border-gray-400 shadow-2xl">
           <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             
             <div className="flex flex-col gap-2">
@@ -93,7 +93,7 @@ function Contact() {
                 value={formData.name}
                 onChange={handleChange} 
                 placeholder="Enter your name"
-                className="dark:bg-zinc-800 bg-zinc-200 border border-zinc-700 p-4 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-white placeholder-gray-500 transition-all"
+                className="dark:bg-zinc-800 bg-zinc-200 border border-zinc-700 p-4 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-white placeholder-gray-500 transition-all "
               />
             </div>
             
@@ -123,7 +123,7 @@ function Contact() {
 
             <button 
               type="submit"
-              className="bg-(--color-primary) text-white font-bold text-lg py-4 rounded-full mt-4 hover:bg-(--color-secondary) hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-blue-900/20"
+              className="bg-(--color-primary) text-white font-semibold text-base py-4 rounded-full mt-4 hover:bg-(--color-secondary) hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-blue-900/20"
             >
               Send Message
             </button>

@@ -2,16 +2,16 @@ import React from 'react'
 
 function Projects({props}) {
   return (
-    <div className='flex flex-col md:flex-row gap-8 w-full items-center justify-evenly dark:bg-gray-800 bg-gray-100 rounded-2xl shadow-blue-800 shadow-lg overflow-hidden'>
-        <div className='rounded-xl w-full h-55 md:h-85 flex items-center flex-col'>
+    <div className='flex flex-col md:flex-row gap-8 w-full md:h-95 items-center justify-evenly dark:bg-(--color-dark-page) bg-(--color-light-page) rounded-2xl ring-2 ring-(--color-primary)/50 overflow-hidden'>
+        <div className='rounded-xl w-full md:h-95 flex items-center flex-col'>
             <img src={props.imageUrl}
             alt="project-demo" 
             className='object-cover w-full h-full'
             />
         </div>
-        <div className='w-full flex gap-1 flex-col p-4'>
+        <div className='w-full flex gap-1 flex-col p-3'>
             <h2 className='md:text-2xl text-xl font-bold text-black dark:text-white'>{props.name}</h2>
-            <p className='w-full dark:text-gray-400 text-gray-800 text-base'>{props.info}</p>
+            <p className='w-full dark:text-gray-400 text-gray-800 text-sm'>{props.info}</p>
 
             <div>
               <div className='w-full h-full p-3 mt-4 rounded-xl'>
@@ -29,7 +29,7 @@ function Projects({props}) {
                     </span>
                   ))}
                 </div>
-                <div className='flex items-center justify-start gap-4 dark:text-gray-300 text-gray-800 underline underline-offset-4 mt-10'>
+                <div className='flex items-center justify-start gap-4 dark:text-gray-300 text-gray-800 text-sm md:text-base underline underline-offset-4 mt-10'>
                     <a 
                       href={props.liveDemo} // <-- Use your project data
                       target="_blank" 

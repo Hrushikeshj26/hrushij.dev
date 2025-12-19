@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -8,16 +7,14 @@
                 color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.font-share {
-  /* font-family: "Share Tech", sans-serif; */
-  font-family: "Noto Sans", sans-serif;
+.font-Parkinsans {
+   font-family: "Parkinsans", sans-serif;
 }
 
-
 :root {
-  --color-primary : #3457CB;
-  --color-dark-page : #000000;
-  --color-light-page : #EBEEFA;
-  --color-secondary : #5D79D5;
-  --color-secondary-hover : #859AE0;
+  --color-primary : #1d4ed8;
+  --color-dark-page : #171717;
+  --color-light-page : #e5e5e5;
+  --color-secondary : #3b82f6;
+  --color-secondary-hover : #60a5fa;
 }
