@@ -20,8 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Hero className= 'font-nato'/>
-              <Hero2/>
+              <Hero />
+              <About />
+              <Hero2 />
             </>
           }/>
         <Route path="/about" element={<About/>}/>

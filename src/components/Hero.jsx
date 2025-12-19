@@ -15,7 +15,7 @@ function Hero() {
               HRUSHIKESH JADHAV.
             </span>
           </h1>
-          <p className="max-w-xl dark:text-gray-300 py-2 md:py-6 text-base md:text-xl leading-relaxed mx-8 md:mx-0 ">
+          <p className="max-w-xl dark:text-gray-300 pt-6 md:py-6 text-base md:text-xl leading-relaxed mx-8 md:mx-0 ">
             Frontend Developer crafting clean, engaging, and performant web
             experiences. I'm driven by a passion for solving problems and
             building intuitive digital products.

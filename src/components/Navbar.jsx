@@ -38,13 +38,13 @@ function Navbar() {
                 Home
               </NavLink>
             
-              <NavLink to="/about" className={({ isActive }) => 
+              {/* <NavLink to="/blog" className={({ isActive }) => 
               isActive
               ? "border-b-3 border-(--color-primary)"
               : "dark:hover:text-gray-300 hover:text-gray-600"
               }>
-                About
-              </NavLink>
+                Blog
+              </NavLink> */}
             
               <NavLink to="/contact" className={({ isActive }) => 
               isActive
@@ -75,13 +75,13 @@ function Navbar() {
                     Home
                   </NavLink>
                 
-                  <NavLink to="/about" className={({ isActive }) => 
+                  {/* <NavLink to="/blog" className={({ isActive }) => 
                   isActive
                   ? "border-b-3 border-(--color-primary)"
                   : "hover:text-gray-300"
                   }>
-                    About
-                  </NavLink>
+                    Blog
+                  </NavLink> */}
                 
                   <NavLink to="/contact" className={({ isActive }) => 
                   isActive

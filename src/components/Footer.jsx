@@ -1,113 +1,23 @@
 import React, { useState } from 'react';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { GoDotFill } from "react-icons/go";
 
 function Footer() {
-  // 1. State to hold form data
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  // 2. Function to handle input changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
-  // 3. Function to handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // This creates a mailto link with the form data
-    const mailtoLink = `mailto:hrushij92@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=Name: ${encodeURIComponent(formData.name)}%0AEmail: ${encodeURIComponent(formData.email)}%0AMessage: ${encodeURIComponent(formData.message)}`;
-    
-    // Opens the user's default email client
-    window.location.href = mailtoLink;
-    
-    // Optional: Clear form after submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-  };
-
+ 
   return (
-    <div id='contact' className='dark:text-white max-w-7xl mx-auto flex md:gap-5 md:flex-row flex-col p-4'>
-        <div className='md:pt-15 pt-5'>
-            <h2 className='uppercase font-semibold text-2xl md:text-4xl pb-4'>let's connect</h2>
-            <p className='md:text-base text-sm w-full dark:text-gray-400 text-gray-800'>Let's build something great together. Reach out if you're looking for a developer, have a query, or simply want to connect.</p>
-            <div className='w-45 flex gap-2 my-5'>
-                <a
-                href="https://www.linkedin.com/in/hrushikeshj26/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className='bg-(--color-secondary) py-3 px-3 rounded-full dark:text-black text-white hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'>
-                    <FaLinkedinIn />
-                </a>
-                <a
-                    href="https://github.com/Hrushikeshj26" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className='bg-(--color-secondary) py-3 px-3 rounded-full dark:text-black text-white hover:text-white text-2xl font-semibold flex items-center justify-center hover:bg-(--color-secondary-hover) hover:scale-105 transition-all duration-300 shadow-lg'>
-                        <FaGithub />
-                </a>
-            </div>
+    <div id='contact' className='dark:text-white max-w-7xl dark:bg-(--color-dark-page) bg-(--color-light-page) md:mx-auto mx-2 mb-10 px-2 md:px-20 h-80 flex items-center justify-center rounded-2xl shadow-lg shadow-blue-400 dark:shadow-blue-900'>
+        <div className='w-full flex items-center justify-center flex-col gap-5'>
+            <h2 className='uppercase font-bold text-2xl md:text-4xl md:pb-4'>let's connect</h2>
+            <p className='md:text-lg text-sm dark:text-gray-200 text-center'>Let’s build something great together. Whether you have a project in mind, are looking for a dedicated developer, or simply want to connect and exchange ideas, I’m always open to new opportunities and conversations. Reach out anytime, and let’s create something that truly stands out.</p>
+            <Link
+                to="/contact"
+                className="bg-(--color-primary) py-3 px-4 md:px-6 rounded-full text-white font-medium flex items-center gap-10
+                            hover:bg-(--color-secondary) hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg"
+            >
+                  CONTACT ME <GoDotFill className="text-sm" />
+            </Link>
         </div>
-        
-        <form onSubmit={handleSubmit} className='flex flex-col md:w-1/2 px-2 md:p-8 gap-1'>
-            <label htmlFor="name">Name</label>
-            <input 
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder='your name' 
-                className='p-3 dark:bg-gray-800 bg-gray-300 rounded mb-2 text-sm dark:placeholder-gray-400 placeholder-gray-600'
-                required
-            />
-            
-            <label htmlFor="email">Email</label>
-            <input 
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder='your email'
-                className='p-3 dark:bg-gray-800 bg-gray-300 rounded mb-2 text-sm dark:placeholder-gray-400 placeholder-gray-600' 
-                required
-            />
-            
-            <label htmlFor="subject">Subject</label>
-            <input 
-                type="text" 
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className='p-3 dark:bg-gray-800 bg-gray-300 rounded mb-2 text-sm dark:placeholder-gray-400 placeholder-gray-600'
-                required
-            />
-            
-            <label htmlFor="message">Message</label>
-            <textarea 
-                type='text'
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                className='p-3 dark:bg-gray-800 bg-gray-300 rounded mb-2 text-sm dark:placeholder-gray-400 placeholder-gray-600' 
-                required
-            />
-            
-            <button
-                type="submit"
-                className='bg-(--color-primary) hover:bg-(--color-secondary) py-3 px-6 rounded-full text-white font-medium flex items-center gap-10 hover:scale-105 cursor-pointer transition-all duration-300 shadow-lg w-35 justify-center md:mb-0 mb-15 text-sm'
-            >Submit</button>
-        </form>
     </div>
   )
 }
