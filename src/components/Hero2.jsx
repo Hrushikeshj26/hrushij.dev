@@ -41,7 +41,7 @@ const projectList = [
     imageUrl: "./images/HealThrive-demo.png"
   },
   {
-    id: 2,
+    id: 5,
     name: "TechNest – Tech Blog Website",
     info: "A fully responsive personal tech blog with a clean UI, search functionality, and dynamic routing. Built with a focus on a reusable component-based architecture.",
     techStack: ["HTML", "CSS", "React.js", "Tailwind CSS", "React Router"],
